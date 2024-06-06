@@ -1,0 +1,31 @@
+[project]
+name = "example_project"
+version = "0.0.1"
+description = "A short description of the project."
+authors = [
+  { name = "Your name (or your organization/company/team)" },
+]
+readme = "README.md"
+requires-python = "~=3.12"
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# List directories containing reusable code:
+packages = ["example_project"]
+
+[tool.black]
+line-length = 99
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+)/
+'''
+
+[tool.isort]
+profile = "black"
+src_paths = ["example_project"]
