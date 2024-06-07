@@ -6,10 +6,10 @@ Ein Beispielprojekt mit wiederverwendbarem Teil, Notebooks und Skripten.
 Neues Virtual Environment anlegen und externe Pakete installieren:
 
 1. Zweitneueste stabile Pythonversion von python.org installieren.
-2. `cmd.exe` im Projektordner starten und sicherstellen dass das neue Python im PATH ganz oben ist: `where pip`.
+2. `cmd.exe` im Projektordner starten und sicherstellen dass das neue Python im PATH ganz oben ist: `where python`.
 2. Virtual Environment anlegen: `python -m venv .venv`
 4. Virtual Environment aktivieren:`.venv\Scripts\activate.bat`
-4. Prüfen, dass jetzt dass Python aus  dem  Virtual Environment  im PATH ganz oben ist: `where pip`
+4. Prüfen, dass jetzt dass Python aus  dem  Virtual Environment  im PATH ganz oben ist: `where python`
 5. Alle nötigen Pakete installieren: `python -m pip install -r requirements.txt`
 6. Dieses Projekt als Paket installieren: `python -m pip install -e .` Dieser Schritt ist nötig, um Pythoncode aus dem "example_project" Ordner auch in anderen Ordnern zugänglich zu machen.
 
