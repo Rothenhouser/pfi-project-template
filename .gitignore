@@ -1,5 +1,6 @@
 # Data
 /data/
+!/data/example.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
