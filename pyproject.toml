@@ -13,19 +13,18 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-# List directories containing reusable code:
 packages = ["example_project"]
 
-[tool.black]
-line-length = 99
-include = '\.pyi?$'
-exclude = '''
-/(
-    \.git
-  | \.venv
-)/
-'''
+[tool.ruff]
+# Don't auto-format notebooks etc
+exclude = [
+    ".git",
+    ".venv",
+    "notebooks",
+    "data",
+]
 
-[tool.isort]
-profile = "black"
-src_paths = ["example_project"]
+[tool.ruff.lint]
+# Select rules for linting.
+# See https://docs.astral.sh/ruff/rules/
+select = ["F", "I", "ARG", "B"]
